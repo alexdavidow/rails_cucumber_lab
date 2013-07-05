@@ -1,0 +1,9 @@
+<form method="post" action="/subtract">
+  <input type="text" id="s_first" name="s_first"/>
+  <input type="text" id="s_second" name="s_second"/>
+  <button id="subtract_button">Subtract</button>
+</form>
+<h5>Answer</h5>
+<div id="s_answer">
+  <%= @s_answer ? @s_answer : '' %>
+</div>
