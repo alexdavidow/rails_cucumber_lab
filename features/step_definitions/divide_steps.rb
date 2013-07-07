@@ -27,7 +27,7 @@ Given(/^I fill in nothing for 'd_second'$/) do
 end
 
 Then(/^I should get 'Cannot divide by zero'$/) do 
-  puts('Cannot divide by zero') # express the regexp above with the code you wish you had
+  assert_equal(browser.div(:id => 'd_answer').text, 'Cannot divide by zero') # express the regexp above with the code you wish you had
 end
 
 Given(/^I fill in nothing for 'd_first'$/) do
